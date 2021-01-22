@@ -1,0 +1,29 @@
+    <div class="header">
+      <div class="container">
+        <h1>threadly</h1>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        
+        <!-- Form goes here -->
+                 <%= form_for(@signup) do |f| %>  
+  <div class="field"> 
+    <%= f.label :signup %><br> 
+    <%= f.text_field :email, :placeholder => 'Email' %> 
+  </div> 
+  <div class="actions"> 
+    <%= f.submit "Create" %> 
+  </div> 
+<% end %> 
+
+
+        
+        <ul class="comments">
+          <li>Have you felt it?</li>
+          <li>There has been an awakening.</li>
+        </ul>
+
+      </div>
+    </div>

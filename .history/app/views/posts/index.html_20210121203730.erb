@@ -1,0 +1,19 @@
+    <div class="header">
+      <div class="container">
+        <h1>threadly</h1>
+      </div>
+    </div>
+
+  <div class="main">
+  <div class="container">
+  <form>
+  <!-- Form goes here -->
+  render 'new'
+
+<ul class="comments">
+  <% @posts.each do |p| %>
+    <li><%= p.comment %></li>
+  <% end %>
+</ul>
+      </div>
+    </div>
